@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Assignment-two</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
        <a class="font-medium font-bold" href="#">Home</a>
        <a class="text-[#8987A1]" href="#">Shop</a>
        <a class="text-[#8987A1]" href="#">About us</a>
-       <a class="font-medium" href="#">Card ($56)</a>
+       <a class="font-medium" href="#"> <i class="fa-solid fa-cart-arrow-down"></i> Card ($56)</a>
       </div>
     </nav>
     <section class="flex mx-[150px] mt-[160px]  items-center justify-between">
@@ -154,6 +155,74 @@
         </ol>
       </div>
     </section>
+   <section class="mt-60">
+    <div class="text-center mb-40">
+      <h1 class="text-8xl font-bold"><span class="text-[#E95A08]">Latest</span> Deals</h1>
+      <p class="text-4xl text-[#0000007e] mx-48">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </p>
+    </div>
+     <div class="grid grid-cols-3 gap-8 mx-50 relative group">
+      <div class="flex flex-col gap-4">
+       <img src="Image/deal-bloom.png" alt="" class="w-full h-auto rounded-lg object-cover filter brightness-[0.6]">
+       <h1 class="absolute text-4xl
+        text-white font-bold left-13 top-20">60% Off | Bloom Plant <br><span class="text-3xl">Shop Now</span></h1>
+       <img src="Image/deal-ana.png" alt="" class="w-full h-auto rounded-lg object-cover brightness-[0.6]">
+       <h1 class="absolute text-4xl text-white font-bold left-13 top-96">30% Off | Ana  Plant <br> <span class="text-3xl">Shop Now</span></h1>
+      </div>
+       <div class="col-span-2">
+       <img src="Image/deal-zabo.png"  alt="" class="w-full h-full rounded-lg object-cover brightness-[0.6]">
+       <h1 class="absolute text-6xl font-bold bottom-35 left-190 text-white">25% Off | Zabo Plant <br> <span class="text-4xl">Shop Now</span></h1>
+      </div>
+    </div>
+   </section>
+   <section class="mt-40 mb-15 relative">
+  <div class="relative">
+    <img class="w-full" src="Image/news-letter-bg.png" alt="">
+  </div>
+   <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-10">
+     <h1 class="text-white font-bold text-6xl mb-6">
+      Join the colorful Bunch
+     </h1>
+     <form class="flex w-full md:max-w-xl">
+      <input 
+        type="email"
+        placeholder="Write email"
+        class="flex-1 py-3 px-4 rounded-l-md focus:outline-none text-gray-700 bg-white"/>
+       <button 
+        type="submit"
+        class="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6  transition">
+        Subscribe
+      </button>
+    </form>
+   </div>
+</section>
   </main>
+<footer class="flex justify-around items-start px-10 py-16 bg-gray-50">
+  <div class="w-1/3">
+    <img src="Image/logo.png" alt="" class="mb-4">
+    <p class="text-[#00000080] text-4xl">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+  </div>
+  
+  <div class="grid grid-cols-2 gap-x-10 text-2xl text-[#00000085] gap-y-7">
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">About Us</a>
+    <a href="#">Pricing</a>
+    <a href="#">Blog</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">FAQ</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Help Center</a>
+  </div>
+
+  <div class="flex gap-4 items-center">
+    <img src="Image/icon-linkedin.png" alt="" class="h-6">
+    <img src="Image/icon-twitter.png" alt="" class="h-6">
+    <img src="Image/icon-facebook.png" alt="" class="h-6">
+    <img src="Image/icon-youtube.png" alt="" class="h-6">
+  </div>
+</footer>
 </body>
 </html>
