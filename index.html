@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav class="flex justify-between items-center mx-4 mt-4  md:hidden">
+    <nav class="flex justify-between items-center mx-4 mt-4  sm:hidden">
   <div>
     <img src="Image/logo.png" alt="" class="w-28">
   </div>
@@ -152,16 +152,16 @@
     </section>
   </header>
   <main>
-    <section class="flex flex-col md:flex-row py-8 mx-4 md:mx-60 items-center mt-20 md:mt-96 w-full md:w-[1440px] h-auto md:h-[600px] gap-8 md:gap-24">
+    <section class="flex flex-col md:flex-row py-8 mx-4 md:mx-60 items-center mt-20 sm:mt-96 w-full sm:w-[1440px] h-auto sm:h-[600px] gap-8 md:gap-24">
   <div class="w-full md:w-1/2">
-    <img class="w-full md:w-190 h-auto object-contain" src="Image/flower-store.png" alt="">
+    <img class="w-full sm:w-190 h-auto object-contain" src="Image/flower-store.png" alt="">
   </div>
         <div class="sm:overflow-hidden">
           <img class="w-90 h-auto absolute top-565 left-160" src="Image/trusted-badge.png" alt="">
         </div>
-  <div class="w-full md:w-1/2">
-    <h1 class="font-bold text-5xl md:text-7xl">Flower & Plants Lover</h1>
-    <ol class="text-lg md:text-4xl space-y-3 md:space-y-5 text-[#00000079] mt-4 md:mt-0">
+  <div class="w-full sm:w-1/2">
+    <h1 class="font-bold text-5xl sm:text-7xl">Flower & Plants Lover</h1>
+    <ol class="text-lg sm:text-4xl space-y-3 sm:space-y-5 text-[#00000079] mt-4 md:mt-0">
       <li><p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p></li>
       <li><p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p></li>
       <li><p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p></li>
@@ -171,23 +171,35 @@
    <section class="mt-60">
     <div class="text-center mb-40">
       <h1 class="text-8xl font-bold"><span class="text-[#E95A08]">Latest</span> Deals</h1>
-      <p class="text-4xl text-[#0000007e] mx-48">
-        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
-      </p>
+       <p class="text-4xl text-[#0000007e] mx-5 sm:mx-5 md:mx-48">
+          Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+       </p>
     </div>
-     <div class="grid grid-cols-3 gap-8 mx-50 relative group">
-      <div class="flex flex-col gap-4">
-       <img src="Image/deal-bloom.png" alt="" class="w-full h-auto rounded-lg object-cover filter brightness-[0.6]">
-       <h1 class="absolute text-4xl
-        text-white font-bold left-13 top-20">60% Off | Bloom Plant <br><span class="text-3xl">Shop Now</span></h1>
-       <img src="Image/deal-ana.png" alt="" class="w-full h-auto rounded-lg object-cover brightness-[0.6]">
-       <h1 class="absolute text-4xl text-white font-bold left-13 top-96">30% Off | Ana  Plant <br> <span class="text-3xl">Shop Now</span></h1>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-4 md:mx-12 relative">
+     <div class="flex flex-col gap-4">
+     <div class="relative">
+       <img src="Image/deal-bloom.png" alt="" class="w-full h-auto rounded-lg object-cover brightness-[0.6]">
+       <h1 class="absolute text-2xl md:text-4xl text-white font-bold left-4 top-8">
+        60% Off | Bloom Plant <br>
+        <span class="text-xl md:text-3xl">Shop Now</span>
+       </h1>
       </div>
-       <div class="col-span-2">
-       <img src="Image/deal-zabo.png"  alt="" class="w-full h-full rounded-lg object-cover brightness-[0.6]">
-       <h1 class="absolute text-6xl font-bold bottom-35 left-190 text-white">25% Off | Zabo Plant <br> <span class="text-4xl">Shop Now</span></h1>
+       <div class="relative">
+        <img src="Image/deal-ana.png" alt="" class="w-full h-auto rounded-lg object-cover brightness-[0.6]">
+        <h1 class="absolute text-2xl md:text-4xl text-white font-bold left-4 top-8">
+         30% Off | Ana Plant <br>
+         <span class="text-xl md:text-3xl">Shop Now</span>
+        </h1>
       </div>
-    </div>
+     </div>
+      <div class="relative col-span-1 md:col-span-2">
+       <img src="Image/deal-zabo.png" alt="" class="w-full h-full rounded-lg object-cover brightness-[0.6]">
+       <h1 class="absolute text-3xl md:text-6xl font-bold bottom-8 left-4 md:left-48 text-white">
+        25% Off | Zabo Plant <br>
+        <span class="text-xl md:text-4xl">Shop Now</span>
+       </h1>
+      </div>
+   </div>
    </section>
    <section class="mt-40 mb-15 relative">
   <div class="relative">
@@ -197,7 +209,7 @@
      <h1 class="text-white font-bold text-6xl mb-6">
       Join the colorful Bunch
      </h1>
-     <form class="flex w-full md:max-w-xl">
+     <form class="flex w-full sm:max-w-xl">
       <input 
         type="email"
         placeholder="Write email"
@@ -211,13 +223,15 @@
    </div>
 </section>
   </main>
-<footer class="flex justify-around items-start px-10 py-16 bg-gray-50">
-  <div class="w-1/3">
+<footer class="flex flex-col sm:flex-row justify-around items-start px-6 sm:px-10 py-16 bg-gray-50 gap-10">
+  <div class="sm:w-1/3">
     <img src="Image/logo.png" alt="" class="mb-4">
-    <p class="text-[#00000080] text-4xl">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+    <p class="text-[#00000080] text-2xl sm:text-4xl">
+      Indulge your senses with the beauty and fragrance of our fresh flower shop.
+    </p>
   </div>
   
-  <div class="grid grid-cols-2 gap-x-10 text-2xl text-[#00000085] gap-y-7">
+   <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 text-xl sm:text-2xl text-[#00000085] gap-y-6">
     <a href="#">Home</a>
     <a href="#">Features</a>
     <a href="#">About Us</a>
@@ -228,7 +242,8 @@
     <a href="#">Terms of Service</a>
     <a href="#">Contact Us</a>
     <a href="#">Help Center</a>
-  </div>
+   </div>
+
 
   <div class="flex gap-4 items-center">
     <img src="Image/icon-linkedin.png" alt="" class="h-6">
@@ -237,5 +252,6 @@
     <img src="Image/icon-youtube.png" alt="" class="h-6">
   </div>
 </footer>
+
 </body>
 </html>
